@@ -4,7 +4,7 @@
 
 This project implements a hand gesture recognition system to control mouse actions like moving the cursor, left-clicking, right-clicking, and double-clicking using a webcam. The system uses Mediapipe for hand tracking and gesture recognition, OpenCV for video processing, and PyAutoGUI for mouse simulation.
 
-Features
+## Features
 
 Mouse Movement: Move the cursor by tracking the tip of the index finger.
 
@@ -16,7 +16,7 @@ Double Click: Perform a double click using a predefined hand gesture.
 
 Real-Time Detection: Utilizes Mediapipe’s efficient hand-tracking for real-time gesture detection.
 
-Requirements
+## Requirements
 
 The following Python libraries are required:
 
@@ -30,17 +30,17 @@ pynput
 
 numpy
 
-To install all dependencies, run:
+## To install all dependencies, run:
 
 pip install opencv-python mediapipe pyautogui pynput numpy
 
-How It Works
+## How It Works
 
 Hand Tracking: Mediapipe tracks hand landmarks in real-time from the webcam feed.
 
 Gesture Detection: Specific gestures are identified based on angles between finger joints and distances between key points on the hand.
 
-Mouse Actions:
+## Mouse Actions:
 
 Move Mouse: The index finger tip coordinates are mapped to the screen resolution to control cursor movement.
 
@@ -52,15 +52,15 @@ Double Click: Identified by another unique gesture.
 
 Action Execution: PyAutoGUI and Pynput execute the corresponding mouse actions.
 
-File Structure
+## File Structure
 
-main.py: The main script containing all the code for gesture detection and mouse control.
+virtual_mouse.py: The main script containing all the code for mouse control.
 
-Usage
+## Usage
 
 Run the Script:
 
-python main.py
+python virtual_mouse.py
 
 Ensure your webcam is functional.
 
@@ -76,7 +76,7 @@ Double Click: Another predefined gesture.
 
 Press Esc to exit the application.
 
-Limitations
+### Limitations
 
 Only one hand is supported at a time.
 
@@ -84,7 +84,7 @@ The gestures need to be precise for accurate detection.
 
 Performance may vary depending on lighting and webcam quality.
 
-Acknowledgments
+### Acknowledgments
 
 Mediapipe: For real-time hand tracking.
 
