@@ -1,6 +1,6 @@
-Virtual Mouse
+# Virtual Mouse
 
-Overview
+## Overview
 
 This project implements a hand gesture recognition system to control mouse actions like moving the cursor, left-clicking, right-clicking, and double-clicking using a webcam. The system uses Mediapipe for hand tracking and gesture recognition, OpenCV for video processing, and PyAutoGUI for mouse simulation.
 
